@@ -3,25 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="icon" href="./assets/shared/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <title>Space tourism</title>
 </head>
-<body>
+<body class="home">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <header>
+    <img src="assets/shared/logo.svg" alt="Logo">
+    <hr class="navBorder">
+    <ul class="nav">
+      <a href="index.html">
+        <li class="navElement">
+          <div class="navNumber">00</div>
+          <div>Home</div>
+        </li>
+      </a>
+      <a href="destination-moon.html">
+        <li class="navElement">
+          <div class="navNumber">01</div>
+          <div>Destination</div>
+        </li>
+      </a>
+      <a href="crew-commander.html">
+        <li class="navElement">
+          <div class="navNumber">02</div>
+          <div>Crew</div>
+        </li>
+      </a>
+      <a href="technology-vehicle.html">
+        <li class="navElement">
+          <div class="navNumber">03</div>
+          <div>Technology</div>
+        </li>
+      </a>
+    </ul>
+  </header>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
+  <main>
+    <div class="spaceContainer">
+      <h5>So, you want to travel to</h5>
+      <h1 class="space">Space</h1>
+      <p>
+        Let’s face it, if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </div>
+    <div class="explore">
+      <a href="destination-moon.html">
+        <div class="oval">
+          <h4 class="exploreHeading">explore</h4>
+        </div>
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>

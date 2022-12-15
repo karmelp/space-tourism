@@ -3,35 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="icon" href="./assets/shared/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <title>Space tourism</title>
 </head>
-<body>
+<body class="destination">
+  <header>
+    <img src="assets/shared/logo.svg" alt="Logo">
+    <hr class="navBorder">
+    <ul class="nav navtext">
+      <a href="index.html">
+        <li class="navElement">
+          <div class="navNumber">00</div>
+          <div>Home</div>
+        </li>
+      </a>
+      <a href="destination-moon.html">
+        <li class="navElement">
+          <div class="navNumber">01</div>
+          <div>Destination</div>
+        </li>
+      </a>
+      <a href="crew-commander.html">
+        <li class="navElement">
+          <div class="navNumber">02</div>
+          <div>Crew</div>
+        </li>
+      </a>
+      <a href="technology-vehicle.html">
+        <li class="navElement">
+          <div class="navNumber">03</div>
+          <div>Technology</div>
+        </li>
+      </a>
+    </ul>
+  </header>
+  <main>
+    <div>
+      <h5 class="pickDestination">
+        <div class="pageNumber">01</div>
+        <div class="pageDescription">Pick your destination</div>
+      </h5>
+      <img class="moonPicture" src="assets/destination/image-mars.png" alt="mars">
+    </div>
+    <div class="destinationInfoContainer">
+        <ul class="destinationMenu subHeading2">
+          <a href="destination-moon.html">
+            <li>Moon</li>
+          </a>
+          <a href="destination-mars.html">
+            <li>Mars</li>
+          </a>
+          <a href="destination-europa.html">
+            <li>Europa</li>
+          </a>
+          <a href="destination-titan.html">
+            <li>Titan</li>
+          </a>
+        </ul>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+        <h2 class="destinationName">Mars</h2>
 
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
+        <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+        <hr>
+        <div class="travelInfo">
+          <div>
+            <h6 class="subHeading2">Avg. distance</h6>
+            <h6 class="subHeading1 infoPadding">225 MIL. km</h6>
+          </div>
+          <div>
+            <h6 class="subHeading2">Est. travel time</h6>
+            <h6 class="subHeading1 infoPadding">9 months</h6>
+          </div>
+        </div>
+    </div>
+  </main>
 </body>
 </html>
