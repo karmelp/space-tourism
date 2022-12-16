@@ -216,7 +216,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 500px;
+    width: 550px;
+    gap: 95px;
+    margin-left: 55px;
 }
 
 .pickDestination {
@@ -233,12 +235,14 @@ a {
     color: #FFFFFF;
 }
 
-.moonPicture {
+.planetPictureContainer {
     display: flex;
-    
+    justify-content: end;
+}
+
+.moonPicture {
     width: 445px;
     height: 445px;
-    margin: 90px 0 0 80px;
 }
 
 .destinationInfoContainer {
@@ -270,13 +274,21 @@ hr {
 }
 
 .travelInfo {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 30px; 
     padding-top: 28px;
-    display: flex;
+
 }
 
 .infoPadding {
-    padding: 12px 60px 0 0;
+    padding-top: 12px;
 }
+
+
+
 
 .crewMember {
     position: absolute;
