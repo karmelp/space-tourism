@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="icon" href="./assets/shared/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <title>Space tourism</title>
 </head>
-<body>
+<body class="crew">
   <header>
     <img src="assets/shared/logo.svg" alt="Logo">
     <hr class="navBorder">
@@ -39,18 +40,35 @@
       </a>
     </ul>
   </header>
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Flight Engineer
-  Anousheh Ansari
-
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
+  <main>
+    <div class="crewMember">
+      <h5 class="pageDescriptionContainer">
+        <div class="pageNumber">02</div>
+        <div class="pageDescription">Meet your crew</div>
+      </h5>
+      <div class="crewMemberInfo">
+        <p class="crewMemberPosition subHeading1">Flight Engineer</p>
+        <h3 class="crewMemberName">Anousheh Ansari</h3>
+        <p class="crewMemberIntro">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+      </div>
+      <div class="crewMenu">
+        <a href="crew-commander.html">
+          <div class="menuDot"></div>
+        </a>
+        <a href="crew-specialist.html">
+          <div class="menuDot"></div>
+        </a>
+        <a href="crew-pilot.html">
+          <div class="menuDot"></div>
+        </a>
+        <a href="crew-engineer.html">
+          <div class="menuDot"></div>
+        </a>
+      </div>
+    </div>
+    <div class="crewPictureContainer">
+      <img class="crewPicture" src="assets/crew/image-anousheh-ansari.png" alt="Douglas Hurley">
+    </div>
+  </main>
 </body>
 </html>

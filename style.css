@@ -99,10 +99,24 @@ p {
 main {
     height: 764px;
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1.5fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 0px 30px; 
     justify-items: center;
+}
+
+.pageDescriptionContainer {
+    display: flex;
+}
+
+.pageNumber {
+    padding-right: 28px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.pageDescription {
+    color: #FFFFFF;
 }
 
 /* ------------ HEADER ------------ */
@@ -215,24 +229,9 @@ a {
 .destinationPictureContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 550px;
     gap: 95px;
-    margin-left: 55px;
-}
-
-.pickDestination {
-    display: flex;
-}
-
-.pageNumber {
-    padding-right: 28px;
-    font-weight: 700;
-    opacity: 0.25;
-}
-
-.pageDescription {
-    color: #FFFFFF;
+    margin: 80px 0 0 55px;
 }
 
 .planetPictureContainer {
@@ -287,31 +286,74 @@ hr {
     padding-top: 12px;
 }
 
+/* ------------ CREW ------------ */
 
-
+.crew::before {
+    content: "";
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    opacity: 0.25;
+}
 
 .crewMember {
-    position: absolute;
-    width: 214px;
-    height: 37px;
-    left: 165.5px;
-    top: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0 55px;
+    height: 600px;
+    z-index: 100;
+}
+
+.crewMemberInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.crewMemberPosition {
+    padding-top: 150px;
     opacity: 0.5;
 }
 
-.crewPicture {
-    position: absolute;
-    width: 568.07px;
-    height: 712px;
-    left: 734.93px;
-    top: 198px;
-}
-
 .crewMemberName {
-    position: absolute;
-    width: 488px;
-    height: 64px;
-    left: 165.5px;
-    top: 452px;
+    padding-bottom: 25px;
+    width: 614px;
 }
 
+.crewMemberIntro {
+    width: 430px;
+}
+
+.crewMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    padding-top: 66px;
+}
+
+.menuDot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    opacity: 0.17;
+    cursor: pointer;
+}
+
+.menuDot:hover {
+    background: #FFFFFF;
+    opacity: 0.5;
+}
+
+.crewPictureContainer {
+    display: flex;
+    align-items: flex-end;
+    height: 780px;
+}
+
+.crewPicture {
+    z-index: 100;
+}
