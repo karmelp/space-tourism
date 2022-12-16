@@ -94,6 +94,17 @@ p {
     padding-bottom: 54px;
 }
 
+/* ------------ GLOBAL ------------ */
+
+main {
+    height: 764px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 30px; 
+    justify-items: center;
+}
+
 /* ------------ HEADER ------------ */
 
 header {
@@ -133,7 +144,6 @@ a {
 .nav li {
     display: flex;
     text-decoration: none;
-    cursor: pointer;
     padding-right: 48px;
     font-family: 'Barlow Condensed', sans-serif;
     font-style: normal;
@@ -148,8 +158,12 @@ a {
 .navNumber {
     padding-right: 11px;
     font-weight: 700;
+    cursor: pointer;
 }
 
+.navText {
+    cursor: pointer;
+}
 /* ------------ HOME ------------ */
 
 .home {
@@ -157,14 +171,6 @@ a {
     background-repeat: no-repeat;
 }
 
-.homeMain {
-    height: 764px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 30px; 
-    justify-items: center;
-}
 .spaceContainer {
     display: flex;
     flex-direction: column;
@@ -206,13 +212,15 @@ a {
     background-repeat: no-repeat;
 }
 
+.destinationPictureContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
 .pickDestination {
     display: flex;
-    position: absolute;
-    width: 400px;
-    height: 34px;
-    left: 166.5px;
-    top: 212px;
 }
 
 .pageNumber {
@@ -226,30 +234,32 @@ a {
 }
 
 .moonPicture {
-    position: absolute;
+    display: flex;
+    
     width: 445px;
     height: 445px;
-    left: 230px;
-    top: 343px;
+    margin: 90px 0 0 80px;
 }
 
 .destinationInfoContainer {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 425px;
-    height: 472px;
-    left: 832px;
-    top: 310px;
+    height: 764px;
 }
 
 .destinationMenu {
     display: flex;
+    width: 250px;
+    justify-content: space-between;
 }
-/* 
-li {
+
+.destinationMenu li {
     display: flex;
-    padding-right: 36px;
     color: #D0D6F9;
-} */
+    cursor: pointer;
+}
 
 .destinationName {
     padding: 37px 0 14px;
