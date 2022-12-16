@@ -145,7 +145,7 @@ header img {
 
 .nav {
     display: flex;
-    padding: 38px 15% 38px 10%;
+    padding: 38px 15% 3px 10%;
     max-width: 594px;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
@@ -167,6 +167,16 @@ a {
     letter-spacing: 2.7px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.navItemContainer {
+    display: flex;
+    padding-bottom: 35px;
+}
+
+.navItemContainer:hover {
+    border-bottom: 2px solid #FFFFFF;
+    margin-bottom: -2px;
 }
 
 .navNumber {
