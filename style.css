@@ -426,7 +426,7 @@ hr {
 }
 
 .launchMenu {
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -437,4 +437,22 @@ hr {
     width: 515px;
     overflow: hidden;
     z-index: 100;
+}
+
+.btnCircle {
+    border: 0.5px solid #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.btnCircle:hover {
+
+}
+
+.btnNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
 }
