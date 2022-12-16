@@ -1,11 +1,16 @@
 * {
+    max-width: 1440px;
+    max-height: 900px;
     margin: 0;
     padding: 0;
+
 }
 
 body {
     background-color: #0B0D17;
 }
+
+/* ------------ FONTS ------------ */
 
 h1 {
     font-family: 'Bellefair', serif;
@@ -89,27 +94,18 @@ p {
     padding-bottom: 54px;
 }
 
-.home {
-    background-image: url(assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-}
-
-.destination {
-    background-image: url(assets/destination/background-destination-desktop.jpg);
-    background-repeat: no-repeat;
-}
-
-a {
-    all: unset;
-}
+/* ------------ HEADER ------------ */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1385px;
     height: 96px;
     margin: 40px 0 0 55px;
+}
+
+header img {
+    padding-right: 2%;
 }
 
 .navBorder {
@@ -122,21 +118,22 @@ header {
     opacity: 0.25;
 }
 
-li {
-    display: flex;
-    text-decoration: none;
-    padding-right: 35px;
-}
-
 .nav {
     display: flex;
-    padding: 38px 165px 38px 123px;
-    width: 594px;
+    padding: 38px 15% 38px 10%;
+    max-width: 594px;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
 }
 
-.navElement {
+a {
+    all: unset;
+}
+
+.nav li {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
     padding-right: 48px;
     font-family: 'Barlow Condensed', sans-serif;
     font-style: normal;
@@ -153,12 +150,27 @@ li {
     font-weight: 700;
 }
 
+/* ------------ HOME ------------ */
+
+.home {
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+.homeMain {
+    height: 764px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 30px; 
+    justify-items: center;
+}
 .spaceContainer {
-    position: absolute;
-    width: 450px;
-    height: 382px;
-    left: 165px;
-    top: 387px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    max-width: 450px;
+    margin: 0 0 40px 55px;
 }
 
 .space {
@@ -166,29 +178,32 @@ li {
 }
 
 .explore {
-    position: absolute;
-    width: 274px;
-    height: 274px;
-    left: 1001px;
-    top: 495px;
+    display: flex;
+    align-items: end;
+    margin: 0 55px 100px;
 }
 
 .oval {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    width: 274px;
+    height: 274px;
     border-radius: 100%;
     background: #FFFFFF;
+    cursor: pointer;
 }
 
 .exploreHeading {
-    color: #0B0D17;
-    position: absolute;
-    left: 26%;
-    right: 23%;
-    top: 44%;
+    height: 274px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------ DESTINATION ------------ */
+
+.destination {
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
 }
 
 .pickDestination {
